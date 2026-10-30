@@ -1,0 +1,135 @@
+{
+  "sections": [
+    {
+      "id": "top",
+      "y": 0,
+      "height": 1000,
+      "scrollHeight": 1000
+    },
+    {
+      "id": "cau-chuyen",
+      "y": 1000,
+      "height": 810,
+      "scrollHeight": 810
+    },
+    {
+      "id": "su-kien",
+      "y": 1810,
+      "height": 675,
+      "scrollHeight": 675
+    },
+    {
+      "id": "chon-ve",
+      "y": 2485,
+      "height": 802,
+      "scrollHeight": 802
+    },
+    {
+      "id": "lich-dien",
+      "y": 3287,
+      "height": 3209,
+      "scrollHeight": 3209
+    },
+    {
+      "id": "khoanh-khac",
+      "y": 6496,
+      "height": 784,
+      "scrollHeight": 784
+    },
+    {
+      "id": "dia-diem",
+      "y": 7280,
+      "height": 800,
+      "scrollHeight": 800
+    },
+    {
+      "id": "loi-hen",
+      "y": 8080,
+      "height": 1000,
+      "scrollHeight": 1000
+    },
+    {
+      "id": "footer",
+      "y": 9080,
+      "height": 900,
+      "scrollHeight": 900
+    }
+  ],
+  "stack": {
+    "y": 50,
+    "scale": "matrix(0.955437, 0, 0, 0.955437, 0, 0)"
+  },
+  "archiveAutoMoves": true,
+  "autoPaused": true,
+  "archiveButtonMoves": true,
+  "galleryOpen": true,
+  "galleryAdvances": true,
+  "galleryCloses": true,
+  "mapOpens": true,
+  "faqWorks": true,
+  "storyWorks": true,
+  "venueWorks": true,
+  "menuOpens": true,
+  "menuCloses": true,
+  "reducedMotionWorks": true,
+  "tearWorks": true,
+  "responsive": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missingAnchors": [],
+      "badPurchaseLinks": 0,
+      "uniqueGallery": 17,
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "missingAnchors": [],
+      "badPurchaseLinks": 0,
+      "uniqueGallery": 17,
+      "brokenImages": []
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "missingAnchors": [],
+      "badPurchaseLinks": 0,
+      "uniqueGallery": 17,
+      "brokenImages": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "missingAnchors": [],
+      "badPurchaseLinks": 0,
+      "uniqueGallery": 17,
+      "brokenImages": []
+    },
+    {
+      "width": 767,
+      "scrollWidth": 767,
+      "missingAnchors": [],
+      "badPurchaseLinks": 0,
+      "uniqueGallery": 17,
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "missingAnchors": [],
+      "badPurchaseLinks": 0,
+      "uniqueGallery": 17,
+      "brokenImages": []
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "missingAnchors": [],
+      "badPurchaseLinks": 0,
+      "uniqueGallery": 17,
+      "brokenImages": []
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,119 @@
+{
+  "sections": [
+    {
+      "id": "top",
+      "y": 0,
+      "height": 1000,
+      "width": 1440,
+      "scrollHeight": 1000
+    },
+    {
+      "id": "cau-chuyen",
+      "y": 1000,
+      "height": 810,
+      "width": 1440,
+      "scrollHeight": 810
+    },
+    {
+      "id": "su-kien",
+      "y": 1810,
+      "height": 675,
+      "width": 1440,
+      "scrollHeight": 675
+    },
+    {
+      "id": "chon-ve",
+      "y": 2485,
+      "height": 802,
+      "width": 1440,
+      "scrollHeight": 806
+    },
+    {
+      "id": "lich-dien",
+      "y": 3287,
+      "height": 3209,
+      "width": 1440,
+      "scrollHeight": 3209
+    },
+    {
+      "id": "khoanh-khac",
+      "y": 6496,
+      "height": 784,
+      "width": 1440,
+      "scrollHeight": 812
+    },
+    {
+      "id": "dia-diem",
+      "y": 7280,
+      "height": 800,
+      "width": 1440,
+      "scrollHeight": 800
+    },
+    {
+      "id": "loi-hen",
+      "y": 8080,
+      "height": 1000,
+      "width": 1440,
+      "scrollHeight": 1000
+    },
+    {
+      "id": "footer",
+      "y": 9080,
+      "height": 900,
+      "width": 1440,
+      "scrollHeight": 900
+    }
+  ],
+  "responsive": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "overflow": [],
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "overflow": [],
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "overflow": [],
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 767,
+      "scrollWidth": 767,
+      "overflow": [],
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "overflow": [],
+      "missingAnchors": [],
+      "brokenImages": []
+    }
+  ],
+  "errors": []
+}

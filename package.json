@@ -1,0 +1,16 @@
+{
+  "name": "orchestars-atotc-v2-noctra",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 3030 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 3031 --strictPort",
+    "check": "node --check app.js"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}
