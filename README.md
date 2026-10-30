@@ -1,6 +1,6 @@
 # ATOTC V2 — Noctra
 
-GitHub: https://github.com/goldenduck1102/goldenduckv2
+GitHub: https://github.com/goldenduck1102/ttc2026v2
 
 V2 theo từng section và lớp giao diện của https://maroon-follow-959705.framer.app/, dùng nội dung và ảnh ATOTC V1.
 
@@ -19,12 +19,12 @@ Quy ước bắt buộc khi chỉnh UI: docs/DESIGN.md. Sửa màu tại tokens.
 Workflow: `.github/workflows/pages.yml`, xuất bản sau mỗi lần push vào `main` hoặc chạy thủ công.
 Trong Settings → Pages, chọn Source: GitHub Actions. Tài khoản phải hỗ trợ Pages cho visibility của repository.
 
-Đường dẫn dự kiến sau khi bật Pages và deploy thành công: https://goldenduck1102.github.io/goldenduckv2/
+Đường dẫn dự kiến sau khi bật Pages và deploy thành công: https://goldenduck1102.github.io/ttc2026v2/
 
 Build mô phỏng Pages từ máy local:
 
 ```sh
-GITHUB_REPOSITORY=goldenduck1102/goldenduckv2 pnpm build
+GITHUB_REPOSITORY=goldenduck1102/ttc2026v2 pnpm build
 ```
 
 `pnpm dev` và `pnpm build` không có biến trên vẫn dùng đường dẫn gốc `/`.
