@@ -1,0 +1,31 @@
+[
+  {
+    "slug": "ttc",
+    "page": "https://www.orchestars.vn/a-tale-of-two-christmas",
+    "local": "/assets/programmes/ttc-2025.jpg",
+    "sourceLocal": "/Users/hoangbun/Documents/OCH:Event/03-Website-OrcheStars/orchestars-home-local/assets/live/event-8-banner.jpg",
+    "provenance": "Existing OrcheStars site archive; visually verified title and 20 Dec 2025 artwork. Current landing image endpoint returned 404; used preserved banner.",
+    "bytes": 478282
+  },
+  {
+    "slug": "disney-25",
+    "page": "https://www.orchestars.vn/events/disney-25",
+    "url": "https://96gwmt9ymticran5.public.blob.vercel-storage.com/DISNEY%20485_200.jpg",
+    "local": "/assets/programmes/disney-25.jpg",
+    "bytes": 449206
+  },
+  {
+    "slug": "aot-25",
+    "page": "https://www.orchestars.vn/events/aot-25",
+    "url": "https://96gwmt9ymticran5.public.blob.vercel-storage.com/AOT%201970_700.jpg",
+    "local": "/assets/programmes/aot-25.jpg",
+    "bytes": 517477
+  },
+  {
+    "slug": "ghibli",
+    "page": "https://www.orchestars.vn/api/media/17",
+    "url": "https://96gwmt9ymticran5.public.blob.vercel-storage.com/IPO_ghibli.jpg",
+    "local": "/assets/programmes/ghibli.jpg",
+    "bytes": 892534
+  }
+]

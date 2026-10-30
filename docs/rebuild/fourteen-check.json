@@ -1,0 +1,131 @@
+{
+  "changes": {
+    "ticketName": 0,
+    "ticketNotes": 0,
+    "facts": [
+      "Địa điểm",
+      "Suất diễn",
+      "Ngày",
+      "Năm"
+    ],
+    "fontTitle": "\"Cormorant Garamond\", Georgia, serif",
+    "fontDescription": "Roboto, sans-serif",
+    "fontMenu": "Roboto, sans-serif",
+    "fontLoaded": true,
+    "indicator": 0,
+    "movementImage": "/assets/christmas-2025/christmas-2025-07-large.webp",
+    "tierImages": 0,
+    "tierFills": [
+      "rgb(104, 23, 29)",
+      "rgb(228, 198, 140)",
+      "rgb(72, 33, 43)",
+      "rgb(37, 28, 32)"
+    ],
+    "programmeBanners": [
+      {
+        "src": "/assets/programmes/ttc-2025.jpg",
+        "ok": true
+      },
+      {
+        "src": "/assets/programmes/disney-25.jpg",
+        "ok": true
+      },
+      {
+        "src": "/assets/programmes/aot-25.jpg",
+        "ok": true
+      },
+      {
+        "src": "/assets/programmes/ghibli.jpg",
+        "ok": true
+      }
+    ],
+    "faqInline": 6,
+    "oldBelief": 0,
+    "unrendered": 0,
+    "radii": [
+      "12px",
+      "12px",
+      "12px",
+      "12px",
+      "12px",
+      "12px",
+      "12px",
+      "12px",
+      "12px",
+      "12px",
+      "12px",
+      "12px"
+    ]
+  },
+  "responsive": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "ctaRight": 27,
+      "headerButtonVisible": true,
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 1100,
+      "scrollWidth": 1100,
+      "ctaRight": 27,
+      "headerButtonVisible": true,
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "ctaRight": 27,
+      "headerButtonVisible": true,
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 1000,
+      "scrollWidth": 1000,
+      "ctaRight": 18,
+      "headerButtonVisible": true,
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 945,
+      "scrollWidth": 945,
+      "ctaRight": 18,
+      "headerButtonVisible": true,
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "ctaRight": 18,
+      "headerButtonVisible": true,
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "ctaRight": 12,
+      "headerButtonVisible": true,
+      "missingAnchors": [],
+      "brokenImages": []
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "ctaRight": 12,
+      "headerButtonVisible": true,
+      "missingAnchors": [],
+      "brokenImages": []
+    }
+  ],
+  "menuWorks": true,
+  "faqWorks": true,
+  "mapWorks": true,
+  "ghibliWorks": true,
+  "errors": []
+}

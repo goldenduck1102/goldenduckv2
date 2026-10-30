@@ -1,0 +1,232 @@
+{
+  "widths": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [],
+      "missing": [],
+      "oldStory": false,
+      "posterCaption": false,
+      "seatBeforeTiers": true,
+      "header": {
+        "text": "Mua vé",
+        "icon": false,
+        "radius": "999px",
+        "bg": "rgb(17, 24, 39)"
+      },
+      "phoneIcon": true,
+      "oldFooter": false,
+      "footerColumns": 3,
+      "programmeMargin": "0px"
+    },
+    {
+      "width": 1100,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [],
+      "missing": [],
+      "oldStory": false,
+      "posterCaption": false,
+      "seatBeforeTiers": true,
+      "header": {
+        "text": "Mua vé",
+        "icon": false,
+        "radius": "999px",
+        "bg": "rgb(17, 24, 39)"
+      },
+      "phoneIcon": true,
+      "oldFooter": false,
+      "footerColumns": 3,
+      "programmeMargin": "0px"
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [],
+      "missing": [],
+      "oldStory": false,
+      "posterCaption": false,
+      "seatBeforeTiers": true,
+      "header": {
+        "text": "Mua vé",
+        "icon": false,
+        "radius": "999px",
+        "bg": "rgb(17, 24, 39)"
+      },
+      "phoneIcon": true,
+      "oldFooter": false,
+      "footerColumns": 3,
+      "programmeMargin": "0px"
+    },
+    {
+      "width": 945,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [],
+      "missing": [],
+      "oldStory": false,
+      "posterCaption": false,
+      "seatBeforeTiers": true,
+      "header": {
+        "text": "Mua vé",
+        "icon": false,
+        "radius": "999px",
+        "bg": "rgb(17, 24, 39)"
+      },
+      "phoneIcon": true,
+      "oldFooter": false,
+      "footerColumns": 3,
+      "programmeMargin": "0px"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [],
+      "missing": [],
+      "oldStory": false,
+      "posterCaption": false,
+      "seatBeforeTiers": true,
+      "header": {
+        "text": "Mua vé",
+        "icon": false,
+        "radius": "999px",
+        "bg": "rgb(17, 24, 39)"
+      },
+      "phoneIcon": true,
+      "oldFooter": false,
+      "footerColumns": 3,
+      "programmeMargin": "0px"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [],
+      "missing": [],
+      "oldStory": false,
+      "posterCaption": false,
+      "seatBeforeTiers": true,
+      "header": {
+        "text": "Mua vé",
+        "icon": false,
+        "radius": "999px",
+        "bg": "rgb(17, 24, 39)"
+      },
+      "phoneIcon": true,
+      "oldFooter": false,
+      "footerColumns": 3,
+      "programmeMargin": "0px"
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [],
+      "missing": [],
+      "oldStory": false,
+      "posterCaption": false,
+      "seatBeforeTiers": true,
+      "header": {
+        "text": "Mua vé",
+        "icon": false,
+        "radius": "999px",
+        "bg": "rgb(17, 24, 39)"
+      },
+      "phoneIcon": true,
+      "oldFooter": false,
+      "footerColumns": 3,
+      "programmeMargin": "0px"
+    }
+  ],
+  "errors": [],
+  "seatZoom": true,
+  "menu": true,
+  "broken": [],
+  "footerLinks": [
+    {
+      "name": "675-677 Đường Điện Biên Phủ, Phường 25, Quận Bình Thạnh, TP.HCM",
+      "href": "https://www.google.com/maps/search/?api=1&query=675-677+Dien+Bien+Phu+Binh+Thanh+Ho+Chi+Minh"
+    },
+    {
+      "name": "+(84) 906 502 925",
+      "href": "tel:+84906502925"
+    },
+    {
+      "name": "info@orchestars.vn",
+      "href": "mailto:info@orchestars.vn"
+    },
+    {
+      "name": "Công ty Cổ phần Orchestars",
+      "href": "https://www.orchestars.vn/"
+    },
+    {
+      "name": "Điều khoản và Chính sách",
+      "href": "https://www.orchestars.vn/terms-policies"
+    },
+    {
+      "name": "Chính sách thanh toán",
+      "href": "https://www.orchestars.vn/terms-policies"
+    },
+    {
+      "name": "Chính sách vận chuyển",
+      "href": "https://www.orchestars.vn/terms-policies"
+    },
+    {
+      "name": "Chính sách bảo mật thông tin",
+      "href": "https://www.orchestars.vn/terms-policies"
+    },
+    {
+      "name": "Chính sách xử lý khiếu nại",
+      "href": "https://www.orchestars.vn/terms-policies"
+    },
+    {
+      "name": "Chính sách kiểm hàng",
+      "href": "https://www.orchestars.vn/terms-policies"
+    },
+    {
+      "name": "Facebook",
+      "href": "https://www.facebook.com/ochchildrenschoir"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/orchestars.vn/"
+    },
+    {
+      "name": "YouTube",
+      "href": "https://www.youtube.com/@orchestars_vn"
+    },
+    {
+      "name": "TikTok",
+      "href": "https://www.tiktok.com/@orchestars"
+    }
+  ],
+  "map": {
+    "src": "https://www.google.com/maps?q=Renaissance+Riverside+Hotel+Saigon+8-15+Ton+Duc+Thang&output=embed",
+    "width": 334,
+    "height": 230
+  }
+}

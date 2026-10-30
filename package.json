@@ -8,7 +8,7 @@
     "dev": "vite --host 127.0.0.1 --port 3030 --strictPort",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 3031 --strictPort",
-    "check": "node --check app.js"
+    "check": "node --check app.js && node --check src/components.mjs && node --check src/content.mjs && node --check vite.config.js"
   },
   "devDependencies": {
     "vite": "^8.3.5"

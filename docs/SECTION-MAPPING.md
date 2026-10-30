@@ -2,18 +2,25 @@
 
 Reference inspected in live Chromium at 1440×1000; full page and section screenshots in docs/reference.
 
-| Reference | V2 content | Structure |
+| Reference / latest user revision | V2 content | Current structure |
 |---|---|---|
-| Hero, 1000px | Giáng Sinh bên nhau | Full background image + green color layer + directional shade; left title; bottom-right metadata and waveform/poster control; ticker at bottom; fixed header |
-| 01 The Movement, 810px | Một mùa, hai sắc màu | Full-bleed image with left 4-line title, narrow middle copy, right image subject |
-| 02 Next Event, 675px | ATOTC 2026 | Left two-line title + barcode ticket with four fields + centered CTA; asymmetric corner image frame on right |
-| 03 Nightmakers, 802px | Four ticket tiers | Four edge-to-edge grayscale photographic columns, bottom overlay labels and circular arrows |
-| 04 The Nights, 3209px | Four showtimes + Christmas 2025 archive | Five 507px photo panels, corner badge, bottom-left text/actions, 78px gaps |
-| 05 Visual Archive, 784px | 17 V1 photos | Six narrow 500px columns in horizontal track; numbered captions; drag, arrows and keyboard |
-| 06 About, 800px | Renaissance venue/check-in | Full background, narrow left text, right green statement, three large numeric facts across bottom |
-| 07 The Belief, 100vh | Closing invitation | Full background + left 3-line title + two CTAs |
-| Footer, 900px | OrcheStars | Top logo/tags/contact, three navigation columns, dark perforated ticket over giant moving wordmark |
+| Hero | Giáng Sinh bên nhau | Event banner, left heading, poster control, ticker; shared red ticket-shaped purchase CTA from staging |
+| Movement (removed by user) | — | No story section; navigation points to event introduction |
+| 01 Event about | A TALE OF TWO CHRISTMASES | Narrative and facts left, clean portrait poster right; no caption overlay |
+| 02 Ticket tiers | Seating plan and four tiers | Visible seat map with zoom, then Standing → Eco → Premium → First Class cards with progressively richer frames; no map CTA in heading |
+| 03 Programme artworks | Four named artworks | Sticky artwork panels, image-derived blur on TTC/Disney/Ghibli, shared purchase CTA on every panel; intro CTA aligned left |
+| 04 Visual archive | 17 V1 photos | Horizontal gallery desktop; 3-second colour preview on pointer hover; vertical mobile stack |
+| 05 Venue | Renaissance Riverside | Address/check-in left, exterior image above map/directions right, numeric facts below |
+| 06 FAQ | Six V1 questions | Two columns desktop, accordion and phone icon/contact; one column mobile |
+| Official homepage footer | Company, contact and policies | White 3-column footer based on OrcheStars.vn; copyright and four social links; no old tagline/tear-ticket/navigation footer |
 
-V1 FAQ and venue map are available in accessible dialogs to retain content without adding sections outside the reference composition. The poster control uses V1 artwork; no fabricated music player. No new artist identities, testimonials or attendance statistics. Exact source neon #9aff47 and white #f2f1ed. Bebas Neue for Latin, Barlow Condensed for Vietnamese, BenchNine for Latin body; Vietnamese gets coherent Barlow Condensed glyphs.
 
-Mobile reference was inspected separately at 390×844. Price photo cards stack as four 518px columns; event panels retain 507px height and 78px gaps; gallery becomes a vertical photo stack with bottom overlay captions; About facts and footer columns stack. All 17 V1 photos remain visible, so the mobile archive is longer than the six-photo reference. Continuous gallery playback is desktop-only.
+The venue map is visible inline and remains available in an accessible dialog; FAQ is an inline section to retain content without adding sections outside the reference composition. The poster control uses V1 artwork; no fabricated music player. No new artist identities, testimonials or attendance statistics. Brand colors now follow V1: burgundy #68171d and cream-gold #e4c68c; common tokens/components are defined in DESIGN.md. The entire page now uses only Cormorant Upright for headings/important display text and Roboto for supporting text. Type sizes are adjusted for the wider serif letterforms.
+
+Mobile reference was inspected separately at 390×844. Colour ticket cards stack as four 340px cards; event panels retain 507px height and 78px gaps; gallery becomes a vertical photo stack with bottom overlay captions; Venue facts and official footer columns stack. All 17 V1 photos remain visible, so the mobile archive is longer than the six-photo reference. Continuous gallery playback is desktop-only.
+
+The original measured heights above record the reference baseline. The 14 latest user comments explicitly replace the fifth event/photo panel with a four-programme artwork block, simplify the information card, introduce rounded corners and replace the belief section with FAQ. Current layout follows those revisions; it no longer claims identical total reference height.
+
+The latest 12 comments remove the Movement section, turn the event block into an introduction, insert a seating plan above tiers, replace the right venue slogan with a photo/map stack and replace the footer/CTA with the public homepage versions. These explicit changes supersede the historical Noctra baseline heights and section numbers.
+
+The latest five comments standardize all 14 commercial CTAs to staging's red ticket-shaped “Mua vé” button, add purchase controls to venue/FAQ and reverse the four ticket tiers with progressively stronger outlines. This supersedes the earlier public-homepage pill and programme-specific action styles.

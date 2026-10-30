@@ -1,0 +1,122 @@
+{
+  "shared": {
+    "unrendered": 0,
+    "buttons": 12,
+    "icons": 17,
+    "eyebrows": 8,
+    "brand": "#68171d",
+    "accent": "#e4c68c",
+    "tint": "rgb(104, 23, 29)",
+    "buttonColors": [
+      {
+        "label": "Mua vé ngay",
+        "secondary": true,
+        "bg": "rgb(228, 198, 140)",
+        "fg": "rgb(46, 16, 19)"
+      },
+      {
+        "label": "Khám phá đêm nhạc",
+        "secondary": false,
+        "bg": "rgb(104, 23, 29)",
+        "fg": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Mua vé ngay",
+        "secondary": false,
+        "bg": "rgb(104, 23, 29)",
+        "fg": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Xem sơ đồ",
+        "secondary": false,
+        "bg": "rgb(104, 23, 29)",
+        "fg": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Chọn suất diễn",
+        "secondary": false,
+        "bg": "rgb(104, 23, 29)",
+        "fg": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Mua vé ngay",
+        "secondary": true,
+        "bg": "rgb(228, 198, 140)",
+        "fg": "rgb(46, 16, 19)"
+      },
+      {
+        "label": "Mua vé ngay",
+        "secondary": true,
+        "bg": "rgb(228, 198, 140)",
+        "fg": "rgb(46, 16, 19)"
+      },
+      {
+        "label": "Mua vé ngay",
+        "secondary": true,
+        "bg": "rgb(228, 198, 140)",
+        "fg": "rgb(46, 16, 19)"
+      },
+      {
+        "label": "Mua vé ngay",
+        "secondary": true,
+        "bg": "rgb(228, 198, 140)",
+        "fg": "rgb(46, 16, 19)"
+      },
+      {
+        "label": "Xem khoảnh khắc",
+        "secondary": true,
+        "bg": "rgb(228, 198, 140)",
+        "fg": "rgb(46, 16, 19)"
+      },
+      {
+        "label": "Khám phá đêm nhạc",
+        "secondary": false,
+        "bg": "rgb(104, 23, 29)",
+        "fg": "rgb(255, 255, 255)"
+      },
+      {
+        "label": "Mua vé ngay",
+        "secondary": true,
+        "bg": "rgb(228, 198, 140)",
+        "fg": "rgb(46, 16, 19)"
+      }
+    ],
+    "greenUi": []
+  },
+  "responsive": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missingAnchors": [],
+      "invalidPurchase": 0
+    },
+    {
+      "width": 945,
+      "scrollWidth": 945,
+      "missingAnchors": [],
+      "invalidPurchase": 0
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "missingAnchors": [],
+      "invalidPurchase": 0
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "missingAnchors": [],
+      "invalidPurchase": 0
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "missingAnchors": [],
+      "invalidPurchase": 0
+    }
+  ],
+  "seatMapWorks": true,
+  "menuWorks": true,
+  "storyWorks": true,
+  "errors": []
+}

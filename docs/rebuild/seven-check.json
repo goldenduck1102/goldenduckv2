@@ -1,0 +1,1091 @@
+{
+  "widths": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [
+        {
+          "text": "GIÁNG SINH\nBÊN NHAU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 620
+        },
+        {
+          "text": "MỘT MÙA.\nHAI SẮC MÀU.\nNGÀN\nKỶ NIỆM.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 514
+        },
+        {
+          "text": "HẸN NHAU\nGIÁNG SINH NÀY.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 683
+        },
+        {
+          "text": "MỘT GÓC NHÌN.\nMỘT BUỔI HẸN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 534
+        },
+        {
+          "text": "First Class",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 285
+        },
+        {
+          "text": "Premium",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 285
+        },
+        {
+          "text": "Eco",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 285
+        },
+        {
+          "text": "Standing",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 285
+        },
+        {
+          "text": "NHỮNG\nCÂU CHUYỆN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 468
+        },
+        {
+          "text": "A Tale of Two Christmas",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 533
+        },
+        {
+          "text": "Once Upon a Time",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 408
+        },
+        {
+          "text": "Attack on Titan",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 343
+        },
+        {
+          "text": "Dear Ghibli, My Friend",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 506
+        },
+        {
+          "text": "QUA NHỮNG\nKHUNG HÌNH.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 473
+        },
+        {
+          "text": "GIỮA LÒNG\nSÀI GÒN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 389
+        },
+        {
+          "text": "CÂU HỎI\nTHƯỜNG GẶP.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 588
+        },
+        {
+          "text": "KHÁM PHÁ",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 190
+        },
+        {
+          "text": "KẾT NỐI",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 145
+        },
+        {
+          "text": "ĐỊA ĐIỂM",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 230
+        },
+        {
+          "text": "RENAISSANCERIVERSIDE.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "HAI SẮC MÀU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của những ký ức.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của hôm nay.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        }
+      ],
+      "backdrops": 3,
+      "footerLast": false,
+      "tiers": 4,
+      "missingAnchors": []
+    },
+    {
+      "width": 1100,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [
+        {
+          "text": "GIÁNG SINH\nBÊN NHAU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 600
+        },
+        {
+          "text": "MỘT MÙA.\nHAI SẮC MÀU.\nNGÀN\nKỶ NIỆM.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 376
+        },
+        {
+          "text": "HẸN NHAU\nGIÁNG SINH NÀY.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 521
+        },
+        {
+          "text": "MỘT GÓC NHÌN.\nMỘT BUỔI HẸN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 408
+        },
+        {
+          "text": "First Class",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 465
+        },
+        {
+          "text": "Premium",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 465
+        },
+        {
+          "text": "Eco",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 465
+        },
+        {
+          "text": "Standing",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 465
+        },
+        {
+          "text": "NHỮNG\nCÂU CHUYỆN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 357
+        },
+        {
+          "text": "A Tale of Two Christmas",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 419
+        },
+        {
+          "text": "Once Upon a Time",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 321
+        },
+        {
+          "text": "Attack on Titan",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 269
+        },
+        {
+          "text": "Dear Ghibli, My Friend",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 398
+        },
+        {
+          "text": "QUA NHỮNG\nKHUNG HÌNH.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 361
+        },
+        {
+          "text": "GIỮA LÒNG\nSÀI GÒN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 370
+        },
+        {
+          "text": "CÂU HỎI\nTHƯỜNG GẶP.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 435
+        },
+        {
+          "text": "KHÁM PHÁ",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 190
+        },
+        {
+          "text": "KẾT NỐI",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 145
+        },
+        {
+          "text": "ĐỊA ĐIỂM",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 230
+        },
+        {
+          "text": "RENAISSANCERIVERSIDE.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "HAI SẮC MÀU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của những ký ức.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của hôm nay.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        }
+      ],
+      "backdrops": 3,
+      "footerLast": false,
+      "tiers": 4,
+      "missingAnchors": []
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [
+        {
+          "text": "GIÁNG SINH\nBÊN NHAU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 600
+        },
+        {
+          "text": "MỘT MÙA.\nHAI SẮC MÀU.\nNGÀN\nKỶ NIỆM.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 376
+        },
+        {
+          "text": "HẸN NHAU\nGIÁNG SINH NÀY.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 482
+        },
+        {
+          "text": "MỘT GÓC NHÌN.\nMỘT BUỔI HẸN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 379
+        },
+        {
+          "text": "First Class",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 427
+        },
+        {
+          "text": "Premium",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 427
+        },
+        {
+          "text": "Eco",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 427
+        },
+        {
+          "text": "Standing",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 427
+        },
+        {
+          "text": "NHỮNG\nCÂU CHUYỆN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 333
+        },
+        {
+          "text": "A Tale of Two Christmas",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 390
+        },
+        {
+          "text": "Once Upon a Time",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 299
+        },
+        {
+          "text": "Attack on Titan",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 251
+        },
+        {
+          "text": "Dear Ghibli, My Friend",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 370
+        },
+        {
+          "text": "QUA NHỮNG\nKHUNG HÌNH.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 336
+        },
+        {
+          "text": "GIỮA LÒNG\nSÀI GÒN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 370
+        },
+        {
+          "text": "CÂU HỎI\nTHƯỜNG GẶP.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 401
+        },
+        {
+          "text": "KHÁM PHÁ",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 190
+        },
+        {
+          "text": "KẾT NỐI",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 145
+        },
+        {
+          "text": "ĐỊA ĐIỂM",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 230
+        },
+        {
+          "text": "RENAISSANCERIVERSIDE.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "HAI SẮC MÀU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của những ký ức.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của hôm nay.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        }
+      ],
+      "backdrops": 3,
+      "footerLast": false,
+      "tiers": 4,
+      "missingAnchors": []
+    },
+    {
+      "width": 945,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [
+        {
+          "text": "GIÁNG SINH\nBÊN NHAU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 600
+        },
+        {
+          "text": "MỘT MÙA.\nHAI SẮC MÀU.\nNGÀN\nKỶ NIỆM.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 411
+        },
+        {
+          "text": "HẸN NHAU\nGIÁNG SINH NÀY.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 452
+        },
+        {
+          "text": "MỘT GÓC NHÌN.\nMỘT BUỔI HẸN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 350
+        },
+        {
+          "text": "First Class",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 388
+        },
+        {
+          "text": "Premium",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 388
+        },
+        {
+          "text": "Eco",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 388
+        },
+        {
+          "text": "Standing",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 388
+        },
+        {
+          "text": "NHỮNG\nCÂU CHUYỆN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 307
+        },
+        {
+          "text": "A Tale of Two Christmas",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 360
+        },
+        {
+          "text": "Once Upon a Time",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 276
+        },
+        {
+          "text": "Attack on Titan",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 232
+        },
+        {
+          "text": "Dear Ghibli, My Friend",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 342
+        },
+        {
+          "text": "QUA NHỮNG\nKHUNG HÌNH.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 310
+        },
+        {
+          "text": "GIỮA LÒNG\nSÀI GÒN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 350
+        },
+        {
+          "text": "CÂU HỎI\nTHƯỜNG GẶP.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 383
+        },
+        {
+          "text": "KHÁM PHÁ",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 190
+        },
+        {
+          "text": "KẾT NỐI",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 145
+        },
+        {
+          "text": "ĐỊA ĐIỂM",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 200
+        },
+        {
+          "text": "RENAISSANCERIVERSIDE.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "HAI SẮC MÀU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của những ký ức.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của hôm nay.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        }
+      ],
+      "backdrops": 3,
+      "footerLast": false,
+      "tiers": 4,
+      "missingAnchors": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [
+        {
+          "text": "GIÁNG SINH\nBÊN NHAU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 600
+        },
+        {
+          "text": "MỘT MÙA.\nHAI SẮC MÀU.\nNGÀN\nKỶ NIỆM.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 328
+        },
+        {
+          "text": "HẸN NHAU\nGIÁNG SINH NÀY.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 360
+        },
+        {
+          "text": "MỘT GÓC NHÌN.\nMỘT BUỔI HẸN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 329
+        },
+        {
+          "text": "First Class",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 299
+        },
+        {
+          "text": "Premium",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 299
+        },
+        {
+          "text": "Eco",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 299
+        },
+        {
+          "text": "Standing",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 299
+        },
+        {
+          "text": "NHỮNG\nCÂU CHUYỆN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 289
+        },
+        {
+          "text": "A Tale of Two Christmas",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 292
+        },
+        {
+          "text": "Once Upon a Time",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 230
+        },
+        {
+          "text": "Attack on Titan",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 230
+        },
+        {
+          "text": "Dear Ghibli, My Friend",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 278
+        },
+        {
+          "text": "QUA NHỮNG\nKHUNG HÌNH.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 292
+        },
+        {
+          "text": "GIỮA LÒNG\nSÀI GÒN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 350
+        },
+        {
+          "text": "CÂU HỎI\nTHƯỜNG GẶP.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 303
+        },
+        {
+          "text": "KHÁM PHÁ",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 190
+        },
+        {
+          "text": "KẾT NỐI",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 145
+        },
+        {
+          "text": "ĐỊA ĐIỂM",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 200
+        },
+        {
+          "text": "RENAISSANCERIVERSIDE.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "HAI SẮC MÀU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của những ký ức.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của hôm nay.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        }
+      ],
+      "backdrops": 3,
+      "footerLast": false,
+      "tiers": 4,
+      "missingAnchors": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [
+        {
+          "text": "GIÁNG SINH\nBÊN NHAU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 366
+        },
+        {
+          "text": "MỘT MÙA.\nHAI SẮC MÀU.\nNGÀN\nKỶ NIỆM.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 249
+        },
+        {
+          "text": "HẸN NHAU\nGIÁNG SINH NÀY.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 350
+        },
+        {
+          "text": "MỘT GÓC NHÌN.\nMỘT BUỔI HẸN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 289
+        },
+        {
+          "text": "First Class",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 286
+        },
+        {
+          "text": "Premium",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 286
+        },
+        {
+          "text": "Eco",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 286
+        },
+        {
+          "text": "Standing",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 286
+        },
+        {
+          "text": "NHỮNG\nCÂU CHUYỆN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 253
+        },
+        {
+          "text": "A Tale of Two Christmas",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 312
+        },
+        {
+          "text": "Once Upon a Time",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 312
+        },
+        {
+          "text": "Attack on Titan",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 312
+        },
+        {
+          "text": "Dear Ghibli, My Friend",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 312
+        },
+        {
+          "text": "QUA NHỮNG\nKHUNG HÌNH.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 256
+        },
+        {
+          "text": "GIỮA LÒNG\nSÀI GÒN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 250
+        },
+        {
+          "text": "CÂU HỎI\nTHƯỜNG GẶP.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 366
+        },
+        {
+          "text": "KHÁM PHÁ",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 190
+        },
+        {
+          "text": "KẾT NỐI",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 145
+        },
+        {
+          "text": "ĐỊA ĐIỂM",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 230
+        },
+        {
+          "text": "RENAISSANCERIVERSIDE.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "HAI SẮC MÀU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của những ký ức.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của hôm nay.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        }
+      ],
+      "backdrops": 3,
+      "footerLast": false,
+      "tiers": 4,
+      "missingAnchors": []
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "fonts": [
+        "Roboto, sans-serif",
+        "\"Cormorant Upright\", serif"
+      ],
+      "headings": [
+        {
+          "text": "GIÁNG SINH\nBÊN NHAU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 296
+        },
+        {
+          "text": "MỘT MÙA.\nHAI SẮC MÀU.\nNGÀN\nKỶ NIỆM.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 225
+        },
+        {
+          "text": "HẸN NHAU\nGIÁNG SINH NÀY.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 280
+        },
+        {
+          "text": "MỘT GÓC NHÌN.\nMỘT BUỔI HẸN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 261
+        },
+        {
+          "text": "First Class",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 216
+        },
+        {
+          "text": "Premium",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 216
+        },
+        {
+          "text": "Eco",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 216
+        },
+        {
+          "text": "Standing",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 216
+        },
+        {
+          "text": "NHỮNG\nCÂU CHUYỆN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 229
+        },
+        {
+          "text": "A Tale of Two Christmas",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 242
+        },
+        {
+          "text": "Once Upon a Time",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 242
+        },
+        {
+          "text": "Attack on Titan",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 242
+        },
+        {
+          "text": "Dear Ghibli, My Friend",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 242
+        },
+        {
+          "text": "QUA NHỮNG\nKHUNG HÌNH.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 231
+        },
+        {
+          "text": "GIỮA LÒNG\nSÀI GÒN.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 250
+        },
+        {
+          "text": "CÂU HỎI\nTHƯỜNG GẶP.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 296
+        },
+        {
+          "text": "KHÁM PHÁ",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 190
+        },
+        {
+          "text": "KẾT NỐI",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 145
+        },
+        {
+          "text": "ĐỊA ĐIỂM",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 230
+        },
+        {
+          "text": "RENAISSANCERIVERSIDE.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "HAI SẮC MÀU.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của những ký ức.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        },
+        {
+          "text": "Giáng Sinh của hôm nay.",
+          "family": "\"Cormorant Upright\", serif",
+          "overflow": false,
+          "width": 0
+        }
+      ],
+      "backdrops": 3,
+      "footerLast": false,
+      "tiers": 4,
+      "missingAnchors": []
+    }
+  ],
+  "errors": [],
+  "hover": {
+    "start": {
+      "position": 24,
+      "preview": 1,
+      "filter": "grayscale(0.424066) sepia(0.19083) saturate(0.87278)"
+    },
+    "during": {
+      "position": 24,
+      "preview": 1,
+      "filter": "none"
+    },
+    "after": {
+      "position": 39,
+      "preview": 0,
+      "filter": "grayscale(1) sepia(0.45) saturate(0.7)"
+    },
+    "moving": {
+      "position": 54,
+      "preview": 0,
+      "filter": "grayscale(1) sepia(0.45) saturate(0.7)"
+    }
+  }
+}

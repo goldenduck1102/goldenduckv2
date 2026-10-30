@@ -1,0 +1,101 @@
+{
+  "result": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "image": "http://127.0.0.1:3030/assets/ttc2026-banner.webp",
+      "filter": "none",
+      "titleFont": "Lora, Georgia, serif",
+      "bodyFont": "\"Be Vietnam Pro\", sans-serif",
+      "fontsLoaded": true,
+      "button": "rgb(104, 23, 29)",
+      "arrowSvg": true,
+      "posterArrowSvg": true,
+      "iconCenterDelta": {
+        "x": 0,
+        "y": 0
+      },
+      "copyBottom": 680.53125,
+      "metadataTop": 662.9375,
+      "heroHeight": 842
+    },
+    {
+      "width": 945,
+      "scrollWidth": 945,
+      "image": "http://127.0.0.1:3030/assets/ttc2026-banner.webp",
+      "filter": "none",
+      "titleFont": "Lora, Georgia, serif",
+      "bodyFont": "\"Be Vietnam Pro\", sans-serif",
+      "fontsLoaded": true,
+      "button": "rgb(104, 23, 29)",
+      "arrowSvg": true,
+      "posterArrowSvg": true,
+      "iconCenterDelta": {
+        "x": 0,
+        "y": 0
+      },
+      "copyBottom": 619.8125,
+      "metadataTop": 651.90625,
+      "heroHeight": 842
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "image": "http://127.0.0.1:3030/assets/ttc2026-banner.webp",
+      "filter": "none",
+      "titleFont": "Lora, Georgia, serif",
+      "bodyFont": "\"Be Vietnam Pro\", sans-serif",
+      "fontsLoaded": true,
+      "button": "rgb(104, 23, 29)",
+      "arrowSvg": true,
+      "posterArrowSvg": true,
+      "iconCenterDelta": {
+        "x": 0,
+        "y": 0
+      },
+      "copyBottom": 592.15625,
+      "metadataTop": 651.90625,
+      "heroHeight": 842
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "image": "http://127.0.0.1:3030/assets/ttc2026-poster.webp",
+      "filter": "none",
+      "titleFont": "Lora, Georgia, serif",
+      "bodyFont": "\"Be Vietnam Pro\", sans-serif",
+      "fontsLoaded": true,
+      "button": "rgb(104, 23, 29)",
+      "arrowSvg": true,
+      "posterArrowSvg": true,
+      "iconCenterDelta": {
+        "x": 0,
+        "y": 0
+      },
+      "copyBottom": 467.359375,
+      "metadataTop": 715.375,
+      "heroHeight": 842
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "image": "http://127.0.0.1:3030/assets/ttc2026-poster.webp",
+      "filter": "none",
+      "titleFont": "Lora, Georgia, serif",
+      "bodyFont": "\"Be Vietnam Pro\", sans-serif",
+      "fontsLoaded": true,
+      "button": "rgb(104, 23, 29)",
+      "arrowSvg": true,
+      "posterArrowSvg": true,
+      "iconCenterDelta": {
+        "x": 0,
+        "y": 0
+      },
+      "copyBottom": 422.9375,
+      "metadataTop": 719.8125,
+      "heroHeight": 842
+    }
+  ],
+  "posterWorks": true,
+  "errors": []
+}

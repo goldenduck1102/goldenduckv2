@@ -1,0 +1,43 @@
+{
+  "artwork": [
+    {
+      "title": "A Tale of Two Christmas",
+      "backdrop": true,
+      "filter": "blur(25px) brightness(0.35)",
+      "fit": "contain"
+    },
+    {
+      "title": "Once Upon a Time",
+      "backdrop": true,
+      "filter": "blur(25px) brightness(0.35)",
+      "fit": "contain"
+    },
+    {
+      "title": "Attack on Titan",
+      "backdrop": false,
+      "filter": null,
+      "fit": "contain"
+    },
+    {
+      "title": "Dear Ghibli, My Friend",
+      "backdrop": true,
+      "filter": "blur(25px) brightness(0.35)",
+      "fit": "contain"
+    }
+  ],
+  "manualPause": true,
+  "resumes": true,
+  "reducedMotion": true,
+  "seatingDialog": true,
+  "storyDialog": true,
+  "menu": true,
+  "headingFamilies": [
+    "\"Cormorant Upright\", serif"
+  ],
+  "bodyFamilies": [
+    "Roboto, sans-serif",
+    "\"Cormorant Upright\", serif"
+  ],
+  "error": [],
+  "brokenImages": []
+}

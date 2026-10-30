@@ -5,7 +5,7 @@ toggle.addEventListener('click',()=>setMenu(toggle.getAttribute('aria-expanded')
 nav.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&toggle.getAttribute('aria-expanded')==='true')setMenu(false,true)});
 document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!toggle.contains(e.target))setMenu(false)});
-matchMedia('(min-width:768px)').addEventListener('change',e=>{if(e.matches)setMenu(false)});
+matchMedia('(min-width:1001px)').addEventListener('change',e=>{if(e.matches)setMenu(false)});
 
 const imageDialog=document.getElementById('gallery-dialog');
 const picture=document.getElementById('gallery-image');
@@ -38,16 +38,33 @@ viewport.addEventListener('pointermove',e=>{if(!dragging)return;const delta=e.cl
 window.addEventListener('pointerup',()=>{dragging=false;viewport.classList.remove('dragging');setTimeout(()=>viewport.dataset.dragged='false',50)});
 viewport.addEventListener('dragstart',e=>e.preventDefault());
 
-const ticket=document.getElementById('tear-ticket');
-ticket.addEventListener('click',()=>{ticket.classList.add('torn');setTimeout(()=>{window.scrollTo({top:0,behavior:reduced()?'instant':'smooth'});document.querySelector('.brand').focus({preventScroll:true});setTimeout(()=>ticket.classList.remove('torn'),800)},reduced()?0:400)});
-
 // The reference archive is a continuous horizontal ticker, paused for interaction.
 const track=viewport.querySelector('.archive-track');
 galleryItems.forEach(item=>{const copy=item.cloneNode(true);copy.removeAttribute('href');copy.removeAttribute('data-gallery-src');copy.removeAttribute('data-gallery-alt');copy.removeAttribute('aria-label');copy.setAttribute('aria-hidden','true');copy.inert=false;copy.href=item.href;copy.tabIndex=-1;copy.addEventListener('click',event=>{event.preventDefault();item.click()});copy.querySelector('img').alt='';copy.classList.add('archive-copy');track.append(copy)});
-let galleryVisible=false,galleryHover=false,galleryFocused=false,userPaused=false,pauseUntil=0,lastTick=0,autoPosition=null;
+let galleryVisible=false,hoverPreviewUntil=0,galleryFocused=false,userPaused=false,pauseUntil=0,lastTick=0,autoPosition=null;
 new IntersectionObserver(entries=>{galleryVisible=entries[0].isIntersecting},{threshold:0}).observe(viewport);
-viewport.addEventListener('pointerenter',()=>galleryHover=true);
-viewport.addEventListener('pointerleave',()=>galleryHover=false);
+// A pointer preview pauses for three seconds, then resumes even while hovered.
+const previewDuration=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gallery-preview-duration'));
+let previewTimer=0,previewItem=null,lastPointerX=null,lastPointerY=null;
+function stopPreview(){clearTimeout(previewTimer);previewItem?.classList.remove('is-previewing');previewItem=null;hoverPreviewUntil=0}
+function previewPhoto(item){
+  if(!item||item===previewItem)return;
+  stopPreview();previewItem=item;item.classList.add('is-previewing');
+  hoverPreviewUntil=performance.now()+previewDuration;
+  previewTimer=setTimeout(stopPreview,previewDuration);
+}
+viewport.addEventListener('pointerenter',e=>{
+  if(e.pointerType==='touch')return;
+  lastPointerX=e.clientX;lastPointerY=e.clientY;
+  previewPhoto(document.elementFromPoint(e.clientX,e.clientY)?.closest('.gallery-item'));
+});
+viewport.addEventListener('pointermove',e=>{
+  if(e.pointerType==='touch'||dragging)return;
+  if(e.clientX===lastPointerX&&e.clientY===lastPointerY)return;
+  lastPointerX=e.clientX;lastPointerY=e.clientY;
+  previewPhoto(e.target.closest('.gallery-item'));
+});
+viewport.addEventListener('pointerleave',()=>{stopPreview();lastPointerX=null;lastPointerY=null});
 viewport.addEventListener('focusin',()=>galleryFocused=true);
 viewport.addEventListener('focusout',e=>{if(!viewport.contains(e.relatedTarget))galleryFocused=false});
 const pauseTemporarily=()=>pauseUntil=performance.now()+8000;
@@ -55,7 +72,7 @@ const pauseTemporarily=()=>pauseUntil=performance.now()+8000;
 ['archive-prev','archive-next'].forEach(id=>document.getElementById(id).addEventListener('click',pauseTemporarily));
 const pauseButton=document.getElementById('archive-pause');
 pauseButton.addEventListener('click',()=>{userPaused=!userPaused;pauseButton.setAttribute('aria-pressed',String(userPaused));pauseButton.setAttribute('aria-label',userPaused?'Tiếp tục gallery tự chạy':'Tạm dừng gallery tự chạy');pauseButton.textContent=userPaused?'▷':'Ⅱ'});
-function tickArchive(now){const delta=Math.min(now-lastTick,64);lastTick=now;if(innerWidth>=768&&galleryVisible&&!galleryHover&&!galleryFocused&&!userPaused&&!dragging&&!reduced()&&now>pauseUntil&&!document.querySelector('dialog[open]')){const repeatWidth=track.querySelector('.archive-copy').offsetLeft-galleryItems[0].offsetLeft;if(autoPosition===null||Math.abs(autoPosition-viewport.scrollLeft)>2)autoPosition=viewport.scrollLeft;autoPosition+=delta*.025;if(autoPosition>=repeatWidth)autoPosition-=repeatWidth;viewport.scrollTo({left:autoPosition,behavior:'instant'})}else{autoPosition=null}requestAnimationFrame(tickArchive)}
+function tickArchive(now){const delta=Math.min(now-lastTick,64);lastTick=now;if(innerWidth>=768&&galleryVisible&&now>hoverPreviewUntil&&!galleryFocused&&!userPaused&&!dragging&&!reduced()&&now>pauseUntil&&!document.querySelector('dialog[open]')){const repeatWidth=track.querySelector('.archive-copy').offsetLeft-galleryItems[0].offsetLeft;if(autoPosition===null||Math.abs(autoPosition-viewport.scrollLeft)>2)autoPosition=viewport.scrollLeft;autoPosition+=delta*.025;if(autoPosition>=repeatWidth)autoPosition-=repeatWidth;viewport.scrollTo({left:autoPosition,behavior:'instant'})}else{autoPosition=null}requestAnimationFrame(tickArchive)}
 requestAnimationFrame(tickArchive);
 
 const nightList=document.querySelector('.night-list');

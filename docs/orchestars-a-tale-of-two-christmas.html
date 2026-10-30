@@ -1,0 +1,1699 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Tale Of Two Christmas - ORCHESTARS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: 'Callingstone';
+        src: url('/api/media/file/1FTV-VIP-CALLINGSTONE.OTF') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #040115;
+        color: #ffffff;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Header */
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: #fff;
+      }
+
+      .logo img {
+        height: 40px;
+        width: auto;
+        object-fit: contain;
+      }
+
+      .header-subtitle {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin-left: 2rem;
+      }
+
+      .header-right {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .language-selector {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        color: #000;
+      }
+
+      .language-selector .current-lang {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      .language-dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 0.5rem;
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        min-width: 150px;
+        display: none;
+        z-index: 1000;
+        overflow: hidden;
+      }
+
+      .language-dropdown.show {
+        display: block;
+      }
+
+      .language-option {
+        padding: 0.75rem 1rem;
+        cursor: pointer;
+        color: #000;
+        transition: background-color 0.2s;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        font-size: 0.9rem;
+      }
+
+      .language-option:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      .language-option.active {
+        background-color: rgba(196, 30, 58, 0.1);
+        color: #c41e3a;
+        font-weight: 500;
+      }
+
+      .buy-ticket-btn {
+        text-align: center;
+        text-decoration: none;
+        background-color: #c41e3a;
+        color: #ffffff;
+        padding: 0.8rem 2rem;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        background:
+          linear-gradient(0deg, #a60000, #a60000),
+          linear-gradient(180deg, rgba(166, 14, 96, 0) 39.9%, #e60000 100%);
+        border: 0.67px solid rgba(255, 155, 150, 1);
+        width: 106;
+        padding-top: 8px;
+        padding-right: 16px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        border-radius: 37.33px;
+        border-width: 0.67px;
+      }
+
+      /* Hero Section */
+      .hero {
+        margin-top: 80px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .hero img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .stage-decoration {
+        position: relative;
+        border-radius: 20px;
+        padding: 3rem 2rem;
+        border: 3px solid #c41e3a;
+        box-shadow: 0 20px 60px rgba(196, 30, 58, 0.3);
+      }
+
+      .stage-arch {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 100px;
+        border: 4px solid #d4af37;
+        border-bottom: none;
+        border-radius: 200px 200px 0 0;
+      }
+
+      .hero-title {
+        font-family: 'Callingstone', serif;
+        font-size: clamp(2.5rem, 6vw, 5rem);
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 300;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero-date {
+        background-color: #c41e3a;
+        color: #ffffff;
+        padding: 1rem 3rem;
+        font-size: clamp(1.2rem, 3vw, 2rem);
+        text-align: center;
+        margin: 2rem auto;
+        display: inline-block;
+        border-radius: 8px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .showtimes {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .showtime {
+        color: #ffffff;
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+      }
+
+      /* Event Details Section */
+      .section-title-event {
+        font-family: 'Callingstone', serif;
+        font-style: regular;
+        font-size: 48px;
+        text-align: left;
+        font-weight: 400;
+        color: #ffffff;
+      }
+      .event-details {
+        padding: 6rem 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .event-details-container {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+      }
+
+      .event-details-image-wrapper {
+        max-width: 500px;
+        width: 100%;
+        flex-shrink: 0;
+        top: 100px;
+      }
+
+      .event-details-image {
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+
+      .event-details-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 0;
+      }
+
+      .section-title {
+        font-family: 'Callingstone', serif;
+        text-align: center;
+        letter-spacing: 3px;
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 4rem;
+      }
+
+      .showtime-buttons {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .showtime-btn {
+        background-color: rgba(254, 221, 187, 1);
+        border: none;
+        font-family: 'Callingstone', serif;
+        color: rgba(139, 4, 2, 1);
+        padding: 0.75rem 1.5rem;
+        font-size: 18px;
+        border-radius: 55px;
+        transition: all 0.3s;
+        font-weight: 600;
+      }
+
+      .date-location-info {
+        padding: 1rem;
+        border-radius: 4px;
+        border: 1px solid #fab57c;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .date-info,
+      .location-info {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        color: #fab57c;
+      }
+
+      .date-info svg,
+      .location-info svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        margin-top: 2px;
+        color: #fab57c;
+      }
+
+      .date-info .date-text,
+      .location-info .location-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        color: #fab57c;
+      }
+
+      .location-title {
+        font-size: 1.1rem;
+        color: #fab57c;
+      }
+
+      .location-address {
+        font-size: 0.95rem;
+        color: rgba(250, 181, 124, 0.8);
+      }
+
+      .event-paragraphs {
+        max-width: 100%;
+        margin: 1rem 0;
+        font-size: 1rem;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(203, 213, 225, 1);
+        font-weight: 100;
+      }
+
+      .event-paragraphs h3 {
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #fff;
+      }
+
+      .event-paragraphs p {
+        margin-bottom: 1.5rem;
+      }
+
+      .qr-section {
+        text-align: center;
+      }
+
+      .qr-code {
+        width: 150px;
+        height: 150px;
+        background-color: #ffffff;
+        margin: 0 auto 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+      }
+
+      .contact-info {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .contact-info p {
+        margin: 0.5rem 0;
+      }
+
+      /* Seating Plan Section */
+      .seating-plan {
+        padding: 0rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .seating-plan-image {
+        width: 100%;
+      }
+
+      /* Ticket Section */
+      .tickets {
+        padding: 6rem 2rem;
+      }
+
+      .ticket-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 0 auto;
+        justify-content: center;
+      }
+
+      .ticket-card {
+        max-width: 385px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 2.5rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 2px 0px 8px 0px rgba(54, 36, 19, 1);
+        box-shadow: 2px 0px 8px 0px rgba(147, 0, 0, 1);
+        background:
+          linear-gradient(349.46deg, rgba(205, 35, 18, 0.45) 0%, rgba(0, 0, 0, 0.8) 100%),
+          url('/api/media/file/landing-ticket-background.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position:
+          center,
+          bottom right;
+        background-size:
+          cover,
+          auto 50%;
+      }
+
+      .ticket-card.premium {
+        background:
+          linear-gradient(349.46deg, rgba(33, 123, 31, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%),
+          url('/api/media/file/landing-ticket-background.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position:
+          center,
+          bottom right;
+        background-size:
+          cover,
+          auto 50%;
+        box-shadow: 2px 0px 8px 0px rgba(19, 54, 19, 1);
+        box-shadow: 2px 0px 8px 0px rgba(126, 93, 24, 1);
+      }
+
+      .ticket-card.eco {
+        background:
+          linear-gradient(349.48deg, rgba(250, 181, 124, 0.61) 10%, rgba(0, 0, 0, 0.6) 100%),
+          url('/api/media/file/landing-ticket-background.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position:
+          center,
+          bottom right;
+        background-size:
+          cover,
+          auto 50%;
+        box-shadow: 0px 2px 8px 0px rgba(250, 180, 122, 0.3);
+        box-shadow: 2px 0px 8px 0px rgba(250, 180, 122, 0.5);
+      }
+
+      .ticket-title {
+        margin-bottom: 0.5rem;
+        color: #fff;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 28px;
+      }
+
+      .ticket-price {
+        margin-bottom: 1rem;
+        color: rgba(250, 181, 124, 1);
+        font-family: Montserrat;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 36px;
+        line-height: 40px;
+      }
+
+      .ticket-benefits {
+        flex: 1;
+        list-style: none;
+        margin-bottom: 2rem;
+      }
+
+      .ticket-benefits li {
+        padding: 0.5rem 0;
+        padding-left: 2rem;
+        position: relative;
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .ticket-benefits li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: rgba(250, 181, 124, 1);
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .ticket-benefit-highlight {
+        font-weight: 900 !important;
+      }
+
+      .book-btn {
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        color: #ffffff;
+        padding: 1rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 56px;
+        border-width: 1px;
+        background:
+          linear-gradient(0deg, #a60000, #a60000),
+          linear-gradient(180deg, rgba(166, 14, 96, 0) 39.9%, #e60000 100%);
+        border: 1px solid rgba(255, 155, 150, 1);
+      }
+
+      /* Artists Section */
+      .artists {
+        padding: 4rem 2rem;
+      }
+
+      .artists-grid {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .artist-card {
+        max-width: 400px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .artist-image {
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+      }
+
+      .artist-name {
+        font-size: 1.8rem;
+      }
+
+      .artist-role {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .artist-bio {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: rgba(226, 232, 240, 1);
+        font-weight: 100;
+      }
+
+      .orchestra-info {
+        display: flex;
+        max-width: 1000px;
+        gap: 2rem;
+        margin: 0 auto;
+        margin-top: 4rem;
+      }
+
+      .orchestra-info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .orchestra-info-item:nth-child(1) {
+        flex: 2;
+      }
+
+      .orchestra-info-item:nth-child(2) {
+        flex: 1;
+      }
+
+      .orchestra-info-item img {
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      .orchestra-info-item h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+      }
+
+      .orchestra-info-item p {
+        font-size: 1rem;
+        line-height: 1.8;
+        font-weight: 100;
+        text-align: center;
+      }
+
+      /* Testimonials Section */
+      .testimonials {
+        padding: 6rem 2rem;
+      }
+
+      .testimonial-carousel-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .testimonial-carousel-wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+      .testimonial-cards {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 1rem;
+        width: 100%;
+      }
+
+      .testimonial-card {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        padding: 0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        flex: 0 0 calc((100% - 2rem) / 3);
+        min-width: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+      }
+
+      .testimonial-card.active {
+        opacity: 1;
+      }
+
+      .testimonial-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid rgba(255, 255, 255, 1);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: all 0.3s;
+        z-index: 10;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .carousel-nav.prev {
+        left: -25px;
+      }
+
+      .carousel-nav.next {
+        right: -25px;
+      }
+
+      /* Video Section */
+      .video-section {
+        padding: 2rem 2rem;
+      }
+
+      .video-container {
+        position: relative;
+        max-width: 1400px;
+        margin: 0 auto;
+        background: linear-gradient(135deg, rgba(196, 30, 58, 0.3) 0%, rgba(196, 30, 58, 0.1) 100%);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      wistia-player {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+
+      wistia-player[media-id='x9rg4ju9gk'] {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      /* Sponsors Section */
+      .sponsors {
+        padding: 6rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .sponsors img {
+        max-width: 100%;
+      }
+
+      .sponsors-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .sponsor-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      /* Footer */
+      footer {
+        padding: 3rem 6rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      .copyright {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1rem;
+      }
+
+      .social-icon-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .social-media span {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1rem;
+        font-family: 'Callingstone', serif;
+      }
+
+      .social-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .social-icon:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .buy-ticket-btn-mobile {
+        display: none;
+      }
+
+      /* Responsive Design */
+      /* Mobile styles (applies to tablets by default) */
+      @media (max-width: 640px) {
+        header {
+          padding: 1rem;
+        }
+
+        .buy-ticket-btn {
+          display: none;
+        }
+
+        .logo img {
+          height: 28px;
+        }
+
+        .header-subtitle {
+          margin-left: 1rem;
+          font-size: 0.8rem;
+        }
+
+        .header-right {
+          gap: 1rem;
+        }
+
+        .event-details {
+          margin-top: 80px;
+          padding: 0 1rem;
+        }
+
+        .event-details-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .event-details-image-wrapper {
+          position: static;
+        }
+
+        .seating-plan-image {
+          width: 100%;
+        }
+
+        .testimonial-card {
+          flex: 0 0 100%;
+        }
+
+        .showtime-buttons {
+          flex-direction: column;
+          margin: 2rem auto;
+        }
+
+        .section-title {
+          text-align: center;
+        }
+
+        .tickets {
+          padding: 4rem 1rem;
+        }
+
+        .orchestra-info-item img {
+          height: 270px;
+          object-fit: cover;
+        }
+
+        .testimonials {
+          padding: 4rem 1rem;
+        }
+
+        .carousel-nav {
+          width: 40px;
+          height: 40px;
+          font-size: 1.2rem;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .carousel-nav.prev {
+          left: -16px;
+        }
+
+        .carousel-nav.next {
+          right: -16px;
+        }
+
+        .video-section {
+          padding: 4rem 1rem;
+        }
+
+        .sponsors {
+          padding: 4rem 1rem;
+        }
+
+        .sponsors-title {
+          flex-direction: column;
+          font-size: 2rem;
+          gap: 2rem;
+        }
+
+        .sponsor-logos {
+          gap: 2rem;
+        }
+
+        .buy-ticket-btn-mobile {
+          display: block;
+          position: fixed;
+          bottom: 1rem;
+          right: 1rem;
+          z-index: 1000;
+        }
+
+        footer {
+          flex-direction: column;
+          text-align: center;
+          padding: 3rem 1rem;
+        }
+      }
+
+      /* Tablet styles (641px - 1024px) */
+      /* By default, tablets inherit mobile styles above */
+      /* Add custom tablet overrides here as needed */
+      @media (min-width: 641px) and (max-width: 1024px) {
+        .testimonial-card {
+          flex: 0 0 calc((100% - 1rem) / 2);
+        }
+        .event-details-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .showtime-buttons {
+          justify-content: center;
+        }
+        .orchestra-info-item img {
+          height: 270px;
+          object-fit: contain;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .hero {
+          display: none;
+        }
+        .ticket-cards,
+        .artists-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+        .orchestra-info {
+          flex-direction: column;
+          max-width: 720px;
+        }
+        .section-title-event {
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-title {
+          font-size: 2rem;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .ticket-card,
+        .artist-card {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+    <script src="https://fast.wistia.com/player.js" async></script>
+    <script src="https://fast.wistia.com/embed/x9rg4ju9gk.js" async type="module"></script>
+    <style>
+      wistia-player[media-id='x9rg4ju9gk']:not(:defined) {
+        background: center / contain no-repeat
+          url('https://fast.wistia.com/embed/medias/x9rg4ju9gk/swatch');
+        display: block;
+        filter: blur(5px);
+        padding-top: 56.25%;
+      }
+    </style>
+  
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P6LP9WRZ');
+    </script>
+    <!-- End Google Tag Manager -->
+  
+    </head>
+  <body>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6LP9WRZ"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+    <!-- Header -->
+    <header>
+      <div style="display: flex; align-items: center">
+        <a href="/" class="logo">
+          <img src="/api/media/file/orchestars-logo.svg" alt="ORCHESTARS" />
+        </a>
+      </div>
+      <div class="header-right">
+        <div class="language-selector" id="languageSelector">
+          <div class="current-lang">
+            <span id="currentLang">VI</span>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.6788 15.1331C12.3039 15.5081 11.6961 15.5081 11.3212 15.1331L6.52116 10.3331C6.14627 9.95823 6.14627 9.35042 6.52116 8.97551C6.89607 8.60061 7.50391 8.60061 7.87882 8.97551L12 13.0967L16.1212 8.97551C16.4961 8.60061 17.1039 8.60061 17.4788 8.97551C17.8537 9.35042 17.8537 9.95823 17.4788 10.3331L12.6788 15.1331Z"
+                fill="#334155"
+              />
+            </svg>
+          </div>
+          <div class="language-dropdown" id="languageDropdown">
+            <button class="language-option" data-locale="en">🇺🇸 English</button>
+            <button class="language-option" data-locale="vi">🇻🇳 Tiếng Việt</button>
+          </div>
+        </div>
+        <a class="buy-ticket-btn" href="/events/ttc#seat-map-date-select">Chọn Vé</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="/api/media/file/landing-hero.png" alt="A Tale Of Two Christmas" />
+    </section>
+
+    <!-- Event Details Section -->
+    <section class="event-details">
+      <div class="event-details-container">
+        <div class="event-details-image-wrapper">
+          <img
+            src="/api/media/file/atotc-poster.png"
+            alt="A Tale Of Two Christmas"
+            class="event-details-image"
+          />
+        </div>
+        <div class="event-details-content">
+          <h2 class="section-title-event">A Tale Of Two Christmas</h2>
+
+          <div class="showtime-buttons">
+            <button class="showtime-btn">Show 1: 15:00</button>
+            <button class="showtime-btn">Show 2: 17:30</button>
+            <button class="showtime-btn">Show 3: 20:00</button>
+          </div>
+
+          <div class="date-location-info">
+            <div class="date-info">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 2V6M16 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="date-text">
+                <span>20 tháng 12, 2025</span>
+              </div>
+            </div>
+            <div class="location-info">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="location-text">
+                <div class="location-title">KHÁCH SẠN RENAISSANCE RIVERSIDE SÀI GÒN</div>
+                <div class="location-address">
+                  Số 8-15 Tôn Đức Thắng, Phường Sài Gòn, TP. Hồ Chí Minh
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-paragraphs">
+            <h3>BỮA TIỆC ÂM NHẠC GIAO HƯỞNG KẾT HỢP NHẠC KỊCH</h3>
+            <p>
+              “A Tale Of Two Christmas” là bữa tiệc nghệ thuật nhiệm màu của mùa lễ hội. Điểm hẹn lý
+              tưởng cho gia đình, cho các cặp đôi muốn một buổi hẹn hò khác biệt, và cho hội bạn
+              đang tìm một trải nghiệm Giáng Sinh thật đáng nhớ trong năm nay.
+            </p>
+            <p>
+              Với phong cách kể chuyện bằng âm nhạc giao hưởng đặc trưng của OrcheStars, A Tale of
+              Two Christmas chính là hành trình đi qua những mùa Giáng Sinh của mỗi chúng ta, từ khi
+              còn là một đứa trẻ háo hức chờ quà đến lúc trưởng thành với hai thời đại Giáng sinh:
+              Truyền thống & Hiện đại. Trải nghiệm hoàn hảo cho gia đình, cặp đôi và trẻ em mọi lứa
+              tuổi.
+            </p>
+            <p>
+              Giao hưởng kinh điển với những giai điệu quen thuộc, du dương và sâu lắng, mang theo
+              ký ức Giáng Sinh trước nay.
+            </p>
+            <p>
+              Broadway hiện đại với âm thanh trẻ trung, sôi động và giàu cảm xúc, đại diện cho vẻ
+              đẹp rực rỡ của Giáng Sinh thời nay.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seating Plan Section -->
+    <section class="seating-plan">
+      <img
+        src="/api/media/file/landing-stage-vi.png"
+        alt="A Tale Of Two Christmas Stage"
+        class="seating-plan-image"
+      />
+    </section>
+
+    <!-- Event Ticket Section -->
+    <section class="tickets">
+      <h2 class="section-title">Vé sự kiện</h2>
+      <div class="ticket-cards">
+        <div class="ticket-card">
+          <h3 class="ticket-title">First Class</h3>
+          <div class="ticket-price">1,800,000₫</div>
+          <ul class="ticket-benefits">
+            <li>
+              Vị trí ngồi trung tâm: vị trí chính diện sân khấu, khung nhìn đẹp nhất của đêm diễn.
+            </li>
+            <li>
+              Dịch vụ ưu tiên: Lối vào riêng và hỗ trợ check-in nhanh, quy trình phục vụ chuyên
+              nghiệp suốt sự kiện.
+            </li>
+            <li>Quà lưu niệm Giáng sinh độc quyền dành cho khách vé 1st Class.</li>
+            <li>
+              Hộp quà Christmas và F&B Voucher từ Renaissance Hotel, vé kèm theo một chai nước suối.
+            </li>
+            <li class="ticket-benefit-highlight">
+              Giảm ngay 15% khi mua hàng tại nanoHome từ ngày 14/12/2025 đến hết 14/1/2026.
+            </li>
+          </ul>
+          <a class="book-btn" href="/events/ttc#seat-map-date-select">Chọn Vé</a>
+        </div>
+
+        <div class="ticket-card premium">
+          <h3 class="ticket-title">Premium</h3>
+          <div class="ticket-price">1,200,000₫</div>
+          <ul class="ticket-benefits">
+            <li>
+              Vị trí tầng 5 & 6 – góc nhìn thoáng rộng bao quát sân khấu, mang đến trải nghiệm âm
+              nhạc trọn vẹn.
+            </li>
+            <li>Quà lưu niệm Giáng sinh độc quyền dành cho khách vé Premium.</li>
+            <li>F&B Voucher từ Renaissance Hotel & Vé kèm theo một chai nước suối</li>
+            <li class="ticket-benefit-highlight">
+              Giảm ngay 10% khi mua hàng tại nanoHome từ ngày 14/12/2025 đến hết 14/1/2026.
+            </li>
+          </ul>
+          <a class="book-btn" href="/events/ttc#seat-map-date-select">Chọn Vé</a>
+        </div>
+
+        <div class="ticket-card eco">
+          <h3 class="ticket-title">Economy</h3>
+          <div class="ticket-price">800,000₫</div>
+          <ul class="ticket-benefits">
+            <li>Vị trí tầng 7 – tầm nhìn từ trên cao: bao quát toàn bộ khán phòng và sân khấu.</li>
+            <li>
+              Số lượng giới hạn: cơ hội hiếm có để tận hưởng một đêm hòa nhạc đặc biệt trong không
+              gian sang trọng của khách sạn 5 sao.
+            </li>
+          </ul>
+          <a class="book-btn" href="/events/ttc#seat-map-date-select">Chọn Vé</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performing Artists Section -->
+    <section class="artists">
+      <h2 class="section-title">Nghệ si biểu diễn</h2>
+      <div class="artists-grid">
+        <div class="artist-card">
+          <img
+            src="/api/media/file/landing-artists-conductor.png"
+            alt="SON MACH"
+            class="artist-image"
+          />
+          <h3 class="artist-name">SƠN MẠCH</h3>
+          <div class="artist-role">NHẠC TRƯỞNG</div>
+          <p class="artist-bio">
+            Sơn Mạch là nhạc trưởng, nghệ sĩ violin và nhà sản xuất âm nhạc người sáng lập đầy tầm
+            nhìn của Dàn nhạc Hòa tấu Sài Gòn (The United Saigon Orchestra – TUSO).
+          </p>
+        </div>
+
+        <div class="artist-card">
+          <img
+            src="/api/media/file/landing-artists-singer.png"
+            alt="TONY TONG"
+            class="artist-image"
+          />
+          <h3 class="artist-name">TONY TỐNG</h3>
+          <div class="artist-role">CA SĨ NHẠC KỊCH</div>
+          <p class="artist-bio">
+            Tony Tống là một nghệ sĩ đa tài, kết hợp giữa tư duy của người làm truyền thông chuyên
+            nghiệp và tâm hồn của một nghệ sĩ biểu diễn sân khấu.
+          </p>
+        </div>
+      </div>
+
+      <div class="orchestra-info">
+        <div class="orchestra-info-item">
+          <img src="/api/media/file/landing-artists-orchestra.png" alt="Orchestral Artists" />
+          <h3>Nghệ Sĩ Dàn Nhạc</h3>
+          <p>
+            Các nghệ sĩ của chúng tôi là những tài năng trẻ, tốt nghiệp từ các nhạc viện hàng đầu
+            trên toàn quốc. Với kinh nghiệm biểu diễn dày dạn trong các buổi hòa nhạc danh tiếng, dự
+            án cá nhân và những chương trình quy mô lớn
+          </p>
+        </div>
+        <div class="orchestra-info-item">
+          <img src="/api/media/file/landing-artists-guest.png" alt="Guest Artists" />
+          <h3>Khách Mời Nghệ Sĩ</h3>
+          <p>
+            Chúng tôi vinh dự được hợp tác cùng các nghệ sĩ khách mời thường xuyên bao gồm những
+            nghệ sĩ nổi tiếng
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2 class="section-title">Dấu ấn khó quên với ORCHESTARS</h2>
+      <div class="testimonial-carousel-container">
+        <div class="carousel-nav prev" onclick="moveCarousel(-1)">‹</div>
+        <div class="testimonial-carousel-wrapper">
+          <div class="testimonial-cards" id="testimonialCarousel">
+            <div class="testimonial-card">
+              <img src="/api/media/file/landing-testimonial-1.png" alt="Testimonial 1" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/landing-testimonial-2.png" alt="Testimonial 2" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/landing-testimonial-3.png" alt="Testimonial 3" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/landing-testimonial-4.png" alt="Testimonial 4" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/landing-testimonial-5.png" alt="Testimonial 5" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/landing-testimonial-6.png" alt="Testimonial 6" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-nav next" onclick="moveCarousel(1)">›</div>
+      </div>
+    </section>
+
+    <!-- Promotional Video Section -->
+    <section class="video-section">
+      <div class="video-container">
+        <wistia-player media-id="x9rg4ju9gk" aspect="1.7777777777777777"></wistia-player>
+      </div>
+    </section>
+
+    <!-- Last Event Moments Section -->
+    <section class="testimonials">
+      <div class="testimonial-carousel-container">
+        <div class="carousel-nav prev" onclick="moveMomentsCarousel(-1)">‹</div>
+        <div class="testimonial-carousel-wrapper">
+          <div class="testimonial-cards" id="momentsCarousel">
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-1.png" alt="Moment 1" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-2.png" alt="Moment 2" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-3.png" alt="Moment 3" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-4.png" alt="Moment 4" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-5.png" alt="Moment 5" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-6.png" alt="Moment 6" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-7.png" alt="Moment 7" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-8.png" alt="Moment 8" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-9.png" alt="Moment 9" />
+            </div>
+            <div class="testimonial-card">
+              <img src="/api/media/file/atotc-moments-10.png" alt="Moment 10" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-nav next" onclick="moveMomentsCarousel(1)">›</div>
+      </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors">
+      <img src="/api/media/file/atotc-sponsors-and-partners-vi.png" alt="sponsors and partners" />
+    </section>
+
+    <a class="buy-ticket-btn buy-ticket-btn-mobile" href="/events/ttc#seat-map-date-select"
+      >Chọn Vé</a
+    >
+
+    <!-- Footer -->
+    <footer>
+      <div class="copyright">© 2025 Công ty Cổ phần Orchestars. All rights reserved.</div>
+      <div class="social-media">
+        <span>Theo Dõi Chúng Tôi</span>
+        <div class="social-icon-container">
+          <a class="social-icon" href="https://www.facebook.com/orchestars" target="_blank">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.04598 5.865V8.613H7.03198V11.973H9.04598V21.959H13.18V11.974H15.955C15.955 11.974 16.215 10.363 16.341 8.601H13.197V6.303C13.197 5.96 13.647 5.498 14.093 5.498H16.347V2H13.283C8.94298 2 9.04598 5.363 9.04598 5.865Z"
+                fill="#F8FAFC"
+              />
+            </svg>
+          </a>
+          <a class="social-icon" href="https://www.instagram.com/orchestars.vn" target="_blank">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.017 2H7.947C6.37015 2.00185 4.85844 2.62914 3.74353 3.74424C2.62862 4.85933 2.00159 6.37115 2 7.948L2 16.018C2.00185 17.5948 2.62914 19.1066 3.74424 20.2215C4.85933 21.3364 6.37115 21.9634 7.948 21.965H16.018C17.5948 21.9631 19.1066 21.3359 20.2215 20.2208C21.3364 19.1057 21.9634 17.5938 21.965 16.017V7.947C21.9631 6.37015 21.3359 4.85844 20.2208 3.74353C19.1057 2.62862 17.5938 2.00159 16.017 2V2ZM19.957 16.017C19.957 16.5344 19.8551 17.0468 19.6571 17.5248C19.4591 18.0028 19.1689 18.4371 18.803 18.803C18.4371 19.1689 18.0028 19.4591 17.5248 19.6571C17.0468 19.8551 16.5344 19.957 16.017 19.957H7.947C6.90222 19.9567 5.90032 19.5415 5.16165 18.8026C4.42297 18.0638 4.008 17.0618 4.008 16.017V7.947C4.00827 6.90222 4.42349 5.90032 5.16235 5.16165C5.90122 4.42297 6.90322 4.008 7.948 4.008H16.018C17.0628 4.00827 18.0647 4.42349 18.8034 5.16235C19.542 5.90122 19.957 6.90322 19.957 7.948V16.018V16.017Z"
+                fill="#F8FAFC"
+              />
+              <path
+                d="M11.982 6.81934C10.6134 6.82145 9.30154 7.36612 8.33391 8.33394C7.36627 9.30176 6.82186 10.6138 6.82001 11.9823C6.82159 13.3513 7.36603 14.6637 8.33391 15.6317C9.30179 16.5998 10.6141 17.1445 11.983 17.1463C13.3521 17.1447 14.6647 16.6002 15.6328 15.6321C16.6008 14.664 17.1454 13.3514 17.147 11.9823C17.1449 10.6134 16.5999 9.30122 15.6317 8.33353C14.6634 7.36584 13.3509 6.82166 11.982 6.82034V6.81934ZM11.982 15.1383C11.1452 15.1383 10.3428 14.8059 9.75109 14.2143C9.15941 13.6226 8.82701 12.8201 8.82701 11.9833C8.82701 11.1466 9.15941 10.3441 9.75109 9.75241C10.3428 9.16074 11.1452 8.82834 11.982 8.82834C12.8188 8.82834 13.6213 9.16074 14.2129 9.75241C14.8046 10.3441 15.137 11.1466 15.137 11.9833C15.137 12.8201 14.8046 13.6226 14.2129 14.2143C13.6213 14.8059 12.8188 15.1383 11.982 15.1383Z"
+                fill="#F8FAFC"
+              />
+              <path
+                d="M17.156 8.09509C17.8392 8.09509 18.393 7.54127 18.393 6.85809C18.393 6.17492 17.8392 5.62109 17.156 5.62109C16.4728 5.62109 15.919 6.17492 15.919 6.85809C15.919 7.54127 16.4728 8.09509 17.156 8.09509Z"
+                fill="#F8FAFC"
+              />
+            </svg>
+          </a>
+          <a class="social-icon" href="https://www.tiktok.com/@orchestars" target="_blank">
+            <svg
+              fill="#fff"
+              width="24"
+              height="24"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.708 0.027c1.745-0.027 3.48-0.011 5.213-0.027 0.105 2.041 0.839 4.12 2.333 5.563 1.491 1.479 3.6 2.156 5.652 2.385v5.369c-1.923-0.063-3.855-0.463-5.6-1.291-0.76-0.344-1.468-0.787-2.161-1.24-0.009 3.896 0.016 7.787-0.025 11.667-0.104 1.864-0.719 3.719-1.803 5.255-1.744 2.557-4.771 4.224-7.88 4.276-1.907 0.109-3.812-0.411-5.437-1.369-2.693-1.588-4.588-4.495-4.864-7.615-0.032-0.667-0.043-1.333-0.016-1.984 0.24-2.537 1.495-4.964 3.443-6.615 2.208-1.923 5.301-2.839 8.197-2.297 0.027 1.975-0.052 3.948-0.052 5.923-1.323-0.428-2.869-0.308-4.025 0.495-0.844 0.547-1.485 1.385-1.819 2.333-0.276 0.676-0.197 1.427-0.181 2.145 0.317 2.188 2.421 4.027 4.667 3.828 1.489-0.016 2.916-0.88 3.692-2.145 0.251-0.443 0.532-0.896 0.547-1.417 0.131-2.385 0.079-4.76 0.095-7.145 0.011-5.375-0.016-10.735 0.025-16.093z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Language Selector
+      ;(function () {
+        const languageSelector = document.getElementById('languageSelector')
+        const languageDropdown = document.getElementById('languageDropdown')
+        const currentLang = document.getElementById('currentLang')
+        const languageOptions = document.querySelectorAll('.language-option')
+
+        // Helper function to get cookie value
+        function getCookie(name) {
+          const value = `; ${document.cookie}`
+          const parts = value.split(`; ${name}=`)
+          if (parts.length === 2) return parts.pop().split(';').shift()
+          return null
+        }
+
+        // Helper function to set cookie
+        function setCookie(name, value, days = 365) {
+          const expires = new Date()
+          expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000)
+          document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`
+        }
+
+        // Get current locale: check cookie first (for seamless experience), then URL param, then default
+        const cookieLocale = getCookie('next-locale')
+        const urlParams = new URLSearchParams(window.location.search)
+        const urlLocale = urlParams.get('locale')
+        const currentLocale = urlLocale || cookieLocale || 'vi'
+
+        // If URL has locale but cookie doesn't match, update cookie (for consistency)
+        if (urlLocale && urlLocale !== cookieLocale) {
+          setCookie('next-locale', urlLocale)
+        }
+
+        // Update current language display
+        const langMap = { en: 'EN', vi: 'VI' }
+        currentLang.textContent = langMap[currentLocale] || 'VI'
+
+        // Mark active language
+        languageOptions.forEach((option) => {
+          if (option.getAttribute('data-locale') === currentLocale) {
+            option.classList.add('active')
+          }
+        })
+
+        // Toggle dropdown
+        languageSelector.addEventListener('click', function (e) {
+          e.stopPropagation()
+          languageDropdown.classList.toggle('show')
+        })
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (e) {
+          if (!languageSelector.contains(e.target)) {
+            languageDropdown.classList.remove('show')
+          }
+        })
+
+        // Handle language selection
+        languageOptions.forEach((option) => {
+          option.addEventListener('click', function (e) {
+            e.stopPropagation()
+            const locale = this.getAttribute('data-locale')
+
+            // Set cookie immediately for seamless experience
+            setCookie('next-locale', locale)
+
+            // Redirect with query parameter (middleware will also set cookie)
+            const url = new URL(window.location.href)
+            url.searchParams.set('locale', locale)
+            window.location.href = url.toString()
+          })
+        })
+      })()
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          const target = document.querySelector(this.getAttribute('href'))
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }
+        })
+      })
+
+      // Carousel Manager - handles multiple carousels independently
+      function createCarouselManager(carouselId) {
+        let currentIndex = 0
+        const carousel = document.getElementById(carouselId)
+        if (!carousel) return null
+
+        const cards = carousel.querySelectorAll('.testimonial-card')
+        const totalCards = cards.length
+
+        // Get number of items to show at once (3 on desktop, 1 on mobile/tablet)
+        function getItemsPerView() {
+          if (window.innerWidth > 1024) {
+            return 3 // Desktop
+          } else if (window.innerWidth > 640) {
+            return 2 // Tablet (can be customized)
+          } else {
+            return 1 // Mobile
+          }
+        }
+
+        // Calculate max index we can scroll to
+        function getMaxIndex() {
+          const itemsPerView = getItemsPerView()
+          return Math.max(0, totalCards - itemsPerView)
+        }
+
+        // Update carousel position and opacity
+        function updateCarousel() {
+          const wrapper = carousel.parentElement
+          const wrapperWidth = wrapper.offsetWidth
+          const gap = 16 // 1rem gap in pixels (matching CSS gap: 1rem)
+          const itemsPerView = getItemsPerView()
+          const cardWidth = (wrapperWidth - gap * (itemsPerView - 1)) / itemsPerView
+
+          // Move by 1 item at a time
+          const translateX = currentIndex * (cardWidth + gap)
+          carousel.style.transform = `translateX(-${translateX}px)`
+
+          // Update opacity: mark visible items as active (fully opaque)
+          cards.forEach((card, index) => {
+            const isVisible = index >= currentIndex && index < currentIndex + itemsPerView
+            if (isVisible) {
+              card.classList.add('active')
+            } else {
+              card.classList.remove('active')
+            }
+          })
+        }
+
+        // Move carousel by 1 item with looping
+        function moveCarousel(direction) {
+          const maxIndex = getMaxIndex()
+
+          currentIndex += direction
+
+          // Handle looping - wrap around
+          if (currentIndex < 0) {
+            currentIndex = maxIndex
+          } else if (currentIndex > maxIndex) {
+            currentIndex = 0
+          }
+
+          updateCarousel()
+        }
+
+        // Initialize carousel
+        function initCarousel() {
+          updateCarousel()
+        }
+
+        // Handle window resize
+        let resizeTimer
+        window.addEventListener('resize', () => {
+          clearTimeout(resizeTimer)
+          resizeTimer = setTimeout(() => {
+            const maxIndex = getMaxIndex()
+            if (currentIndex > maxIndex) {
+              currentIndex = maxIndex
+            }
+            updateCarousel()
+          }, 250)
+        })
+
+        // Touch/swipe support for mobile
+        let touchStartX = 0
+        let touchEndX = 0
+
+        carousel.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX
+        })
+
+        carousel.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX
+          handleSwipe()
+        })
+
+        function handleSwipe() {
+          if (touchEndX < touchStartX - 50) {
+            moveCarousel(1) // Swipe left - next
+          }
+          if (touchEndX > touchStartX + 50) {
+            moveCarousel(-1) // Swipe right - previous
+          }
+        }
+
+        return {
+          move: moveCarousel,
+          init: initCarousel,
+        }
+      }
+
+      // Initialize both carousels
+      let testimonialCarouselManager
+      let momentsCarouselManager
+
+      document.addEventListener('DOMContentLoaded', () => {
+        testimonialCarouselManager = createCarouselManager('testimonialCarousel')
+        momentsCarouselManager = createCarouselManager('momentsCarousel')
+
+        if (testimonialCarouselManager) {
+          testimonialCarouselManager.init()
+        }
+        if (momentsCarouselManager) {
+          momentsCarouselManager.init()
+        }
+      })
+
+      // Global functions for onclick handlers
+      function moveCarousel(direction) {
+        if (testimonialCarouselManager) {
+          testimonialCarouselManager.move(direction)
+        }
+      }
+
+      function moveMomentsCarousel(direction) {
+        if (momentsCarouselManager) {
+          momentsCarouselManager.move(direction)
+        }
+      }
+    </script>
+  
+    <!-- Zalo Chat Widget -->
+    <div
+      class="zalo-chat-widget"
+      data-oaid="1146072611184464184"
+      data-welcome-message="Không khí Giáng sinh đã sẵn sàng. Chào mừng bạn đến với A Tale of Two Christmas!"
+      data-autopopup="1"
+      data-width=""
+      data-height=""
+    ></div>
+    <script src="https://sp.zalo.me/plugins/sdk.js" async></script>
+    <script>
+      (function() {
+        const overrideZIndex = () => {
+          const zaloElements = document.querySelectorAll(
+            '.zalo-chat-widget, [class*="zalo"], [id*="zalo"]'
+          );
+          
+          zaloElements.forEach((element) => {
+            if (element instanceof HTMLElement) {
+              element.style.setProperty('z-index', '49', 'important');
+              const isMobile = window.innerWidth <= 639;
+              element.style.setProperty(
+                'bottom',
+                isMobile ? '64px' : '16px',
+                'important'
+              );
+              element.style.setProperty('right', '16px', 'important');
+              // Keep the SDK iframes light on dark-scheme pages; otherwise the bubble renders as a white square.
+              element.style.setProperty('color-scheme', 'light', 'important');
+            }
+          });
+          
+          zaloElements.forEach((element) => {
+            const nestedElements = element.querySelectorAll('*');
+            nestedElements.forEach((nested) => {
+              if (nested instanceof HTMLElement) {
+                nested.style.setProperty('z-index', '49', 'important');
+              }
+            });
+          });
+        };
+        
+        overrideZIndex();
+        
+        const observer = new MutationObserver(() => {
+          overrideZIndex();
+        });
+        
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+          attributes: true,
+          attributeFilter: ['style']
+        });
+      })();
+    </script>
+    <!-- End Zalo Chat Widget -->
+  
+    </body>
+</html>

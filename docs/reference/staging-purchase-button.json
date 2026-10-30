@@ -1,0 +1,172 @@
+{
+  "html": "<a class=\"layer-012 menu-ticket\" data-node-id=\"3132:24282\" href=\"/#events\">\n              <div class=\"layer-013\" data-node-id=\"I3132:24282;793:29889\" data-name=\"Vector\">\n                <div class=\"layer-014\">\n                  <img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/vector.svg\" decoding=\"async\">\n                </div>\n              </div>\n              <p class=\"layer-016\" data-node-id=\"I3132:24282;793:29890\">\n                Mua vé\n              </p>\n              <div class=\"layer-017\" data-node-id=\"I3132:24282;793:29891\">\n                <div class=\"layer-018\">\n                  <div class=\"layer-019\">\n                    <div class=\"layer-020\">\n                      <img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/line7.svg\" decoding=\"async\">\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </a>",
+  "style": {
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "color": "rgb(17, 17, 17)",
+    "border": "0px solid rgb(17, 17, 17)",
+    "borderRadius": "0px",
+    "padding": "0px 16px",
+    "font": "16px Gilroy, Arial, sans-serif",
+    "width": "120px",
+    "height": "40px",
+    "boxShadow": "none",
+    "display": "flex",
+    "gap": "normal",
+    "animation": "none"
+  },
+  "children": [
+    {
+      "html": "<div class=\"layer-013\" data-node-id=\"I3132:24282;793:29889\" data-name=\"Vector\">\n                <div class=\"layer-014\">\n                  <img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/vector.svg\" decoding=\"async\">\n                </div>\n              </div>",
+      "style": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "rgb(17, 17, 17)",
+        "border": "0px solid rgb(17, 17, 17)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "font": "16px Gilroy, Arial, sans-serif",
+        "width": "120px",
+        "height": "40px",
+        "boxShadow": "none",
+        "display": "block",
+        "gap": "normal",
+        "animation": "none"
+      }
+    },
+    {
+      "html": "<div class=\"layer-014\">\n                  <img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/vector.svg\" decoding=\"async\">\n                </div>",
+      "style": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "rgb(17, 17, 17)",
+        "border": "0px solid rgb(17, 17, 17)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "font": "16px Gilroy, Arial, sans-serif",
+        "width": "121.969px",
+        "height": "42px",
+        "boxShadow": "none",
+        "display": "block",
+        "gap": "normal",
+        "animation": "none"
+      }
+    },
+    {
+      "html": "<img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/vector.svg\" decoding=\"async\">",
+      "style": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "rgb(17, 17, 17)",
+        "border": "0px solid rgb(17, 17, 17)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "font": "16px Gilroy, Arial, sans-serif",
+        "width": "121.969px",
+        "height": "42px",
+        "boxShadow": "none",
+        "display": "block",
+        "gap": "normal",
+        "animation": "none"
+      }
+    },
+    {
+      "html": "<p class=\"layer-016\" data-node-id=\"I3132:24282;793:29890\">\n                Mua vé\n              </p>",
+      "style": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "rgb(255, 255, 255)",
+        "border": "0px solid rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "font": "600 16px / 22.4px Gilroy, Arial, sans-serif",
+        "width": "53.8906px",
+        "height": "22.3906px",
+        "boxShadow": "none",
+        "display": "block",
+        "gap": "normal",
+        "animation": "none"
+      }
+    },
+    {
+      "html": "<div class=\"layer-017\" data-node-id=\"I3132:24282;793:29891\">\n                <div class=\"layer-018\">\n                  <div class=\"layer-019\">\n                    <div class=\"layer-020\">\n                      <img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/line7.svg\" decoding=\"async\">\n                    </div>\n                  </div>\n                </div>\n              </div>",
+      "style": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "rgb(17, 17, 17)",
+        "border": "0px solid rgb(17, 17, 17)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "font": "16px Gilroy, Arial, sans-serif",
+        "width": "0px",
+        "height": "38.3281px",
+        "boxShadow": "none",
+        "display": "flex",
+        "gap": "normal",
+        "animation": "none"
+      }
+    },
+    {
+      "html": "<div class=\"layer-018\">\n                  <div class=\"layer-019\">\n                    <div class=\"layer-020\">\n                      <img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/line7.svg\" decoding=\"async\">\n                    </div>\n                  </div>\n                </div>",
+      "style": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "rgb(17, 17, 17)",
+        "border": "0px solid rgb(17, 17, 17)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "font": "16px Gilroy, Arial, sans-serif",
+        "width": "38.3281px",
+        "height": "1px",
+        "boxShadow": "none",
+        "display": "block",
+        "gap": "normal",
+        "animation": "none"
+      }
+    },
+    {
+      "html": "<div class=\"layer-019\">\n                    <div class=\"layer-020\">\n                      <img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/line7.svg\" decoding=\"async\">\n                    </div>\n                  </div>",
+      "style": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "rgb(17, 17, 17)",
+        "border": "0px solid rgb(17, 17, 17)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "font": "16px Gilroy, Arial, sans-serif",
+        "width": "38.3281px",
+        "height": "1px",
+        "boxShadow": "none",
+        "display": "block",
+        "gap": "normal",
+        "animation": "none"
+      }
+    },
+    {
+      "html": "<div class=\"layer-020\">\n                      <img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/line7.svg\" decoding=\"async\">\n                    </div>",
+      "style": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "rgb(17, 17, 17)",
+        "border": "0px solid rgb(17, 17, 17)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "font": "16px Gilroy, Arial, sans-serif",
+        "width": "38.3281px",
+        "height": "1.82812px",
+        "boxShadow": "none",
+        "display": "block",
+        "gap": "normal",
+        "animation": "none"
+      }
+    },
+    {
+      "html": "<img alt=\"\" class=\"layer-015\" src=\"/site-v2/assets/line7.svg\" decoding=\"async\">",
+      "style": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "color": "rgb(17, 17, 17)",
+        "border": "0px solid rgb(17, 17, 17)",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "font": "16px Gilroy, Arial, sans-serif",
+        "width": "38.3281px",
+        "height": "1.82812px",
+        "boxShadow": "none",
+        "display": "block",
+        "gap": "normal",
+        "animation": "none"
+      }
+    }
+  ]
+}

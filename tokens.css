@@ -1,0 +1,102 @@
+/* Design contract: docs/DESIGN.md. Change shared values here. */
+:root {
+  /* OrcheStars event palette. */
+  --color-brand: #68171d;
+  --color-brand-hover: #83232c;
+  --color-accent: #e4c68c;
+  --color-accent-soft: #f6e6c8;
+  --color-on-brand: #ffffff;
+  --color-accent-ink: #2e1013;
+
+  /* Semantic surfaces and text retain the reference's dark composition. */
+  --color-canvas: #080808;
+  --color-surface: #141011;
+  --color-surface-raised: #23191c;
+  --color-border: #392b2f;
+  --color-text: #f2f1ed;
+  --color-text-muted: #b5aaa6;
+  --color-text-subtle: #938582;
+  --color-watermark: #1b1315;
+  --color-photo-tint: var(--color-brand);
+  --color-status: var(--color-accent);
+  --color-focus: var(--color-accent);
+
+  /* Exactly two families: important display text and readable supporting text. */
+  --font-heading: 'Cormorant Upright', serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-display-latin: var(--font-heading);
+  --font-display-vi: var(--font-heading);
+  --font-event-display: var(--font-heading);
+  --font-event-body: var(--font-body);
+  --font-ui: var(--font-body);
+  --font-navigation: var(--font-body);
+  --font-readable: var(--font-body);
+  --font-size-base: 16px;
+  --type-section: clamp(48px, 5.4vw, 78px);
+  --type-section-line: 1.02;
+  --type-card-title: clamp(34px, 3.4vw, 48px);
+  --size-tier-card: 370px;
+  --gallery-preview-duration: 3000ms;
+  --radius-card: 12px;
+  --radius-dialog: 16px;
+  --color-gold-light: #f8e1ac;
+  --color-gold-deep: #c79a4b;
+  --button-featured-bg: linear-gradient(115deg, var(--color-gold-light), var(--color-accent) 55%, var(--color-gold-deep));
+  --color-tier-first: #e54834;
+  --color-tier-premium: #f5c827;
+  --color-tier-eco: #4694e4;
+  --color-tier-standing: #89b660;
+  --surface-tier-first: var(--color-brand);
+  --surface-tier-premium: var(--color-accent);
+  --surface-tier-eco: #48212b;
+  --surface-tier-standing: #251c20;
+  --size-programme-panel: 507px;
+
+  /* Homepage CTA/footer tokens, verified against OrcheStars.vn. */
+  --color-site-cta: #111827;
+  --color-site-cta-hover: #1f2937;
+  --color-site-paper: #ffffff;
+  --color-site-ink: #09090b;
+  --color-site-muted: #71717a;
+  --color-site-border: #e4e4e7;
+  --radius-pill: 999px;
+  --layout-content-max: 1320px;
+  --surface-seat-map: #faf8f4;
+
+  /* Shared staging ticket-shaped CTA and progressive tier frame tokens. */
+  --color-purchase: #dd0000;
+  --color-purchase-hover: #be0000;
+  --purchase-width: 122px;
+  --purchase-height: 42px;
+  --tier-stroke-standing: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  --tier-stroke-eco: color-mix(in srgb, var(--color-accent) 60%, transparent);
+  --tier-stroke-premium: var(--color-gold-deep);
+  --tier-stroke-first: var(--color-accent);
+
+  /* Shared component tokens. */
+  --button-primary-bg: var(--color-brand);
+  --button-primary-fg: var(--color-on-brand);
+  --button-primary-hover: var(--color-brand-hover);
+  --button-secondary-bg: var(--color-accent);
+  --button-secondary-fg: var(--color-accent-ink);
+  --button-secondary-hover: var(--color-accent-soft);
+  --button-border-color: var(--color-accent);
+  --button-height: 38px;
+  --button-radius: 8px;
+  --icon-size: 18px;
+  --icon-circle-size: 25px;
+  --icon-circle-bg: var(--color-accent-soft);
+  --icon-circle-fg: var(--color-brand);
+  --photo-tint-opacity: .9;
+
+  /* Measured reference geometry, not a new composition. */
+  --layout-inset: 27px;
+  --size-event-panel: 507px;
+  --space-event-stack: 78px;
+}
+@media (max-width: 1000px) {
+  :root { --size-event-panel: 470px; }
+}
+@media (max-width: 767px) {
+  :root { --size-event-panel: 507px; --size-programme-panel: 360px; }
+}
